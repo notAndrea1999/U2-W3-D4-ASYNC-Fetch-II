@@ -1,4 +1,4 @@
-const URL = "https://api.pexels.com/v1/search?query=tiger/";
+const URL = "https://api.pexels.com/v1/search?query=ocean";
 const photoId = new URLSearchParams(window.location.search).get("photoId");
 
 window.onload = async () => {
@@ -12,7 +12,7 @@ window.onload = async () => {
   //   console.log(photos);
 
   photos.forEach((photo) => {
-    if (photo.id === photoId) {
+    if (photo.id === parseInt(photoId)) {
       const container = document.getElementById("container");
       container.innerHTML = `<div class="card mb-4 shadow-sm">
       <img src="${photo.src.original}" alt="">
