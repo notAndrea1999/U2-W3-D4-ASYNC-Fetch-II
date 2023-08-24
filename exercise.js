@@ -26,7 +26,7 @@ const getData = async () => {
     col.innerHTML = `<div class="card mb-4 shadow-sm">
     <img src="${photo.src.original}" alt="">
     <div class="card-body">
-      <h5 class="card-title"><a href="./details.html?photoId=${photo.id}">${photo.photographer}</a></h5>
+      <h5 class="card-title"><a href="./details.html?photoId=${photo.id}">${photo.alt}</a></h5>
       <p class="card-text">
         This is a wider card with supporting text below as a natural lead-in to additional content. This
         content is a little bit longer.
@@ -69,7 +69,7 @@ const getOtherImgs = async () => {
     col.innerHTML = `<div class="card mb-4 shadow-sm">
     <img src="${photo.src.original}" alt="">
     <div class="card-body">
-      <h5 class="card-title"><a href="./details.html?photoId=${photo.id}">${photo.photographer}</a></h5>
+      <h5 class="card-title"><a href="./details.html?photoId=${photo.id}">${photo.alt}</a></h5>
       <p class="card-text">
         This is a wider card with supporting text below as a natural lead-in to additional content. This
         content is a little bit longer.
